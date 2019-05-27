@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 import blog.views
 import wordapp.views
+
 urlpatterns = [
     path('',blog.views.home, name="home"), # 이것만 blog url 파일로 빼낼 수 없는 이유는?
     path('blog/', include('blog.urls')),
